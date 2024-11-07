@@ -13,8 +13,8 @@
 		</listeners>
   <test name="Test">
     <classes>
+      <class name="com.sauce.functionalities.SauceTestLoginLogout"/>
       <class name="com.sauce.functionalities.SauceTestAddToCart"/>
-      <class name="com.sauce.common.SauceBase"/>
       <class name="com.sauce.functionalities.SauceTestCheckout"/>
     </classes>
   </test> <!-- Test -->

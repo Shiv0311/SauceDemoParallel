@@ -38,12 +38,12 @@
       <![CDATA[Test passed: testLogout with status: 1]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-07T10:52:39 IST" name="Sauce Test Suite" finished-at="2024-11-07T10:52:46 IST" duration-ms="7183">
+  <suite started-at="2024-11-07T15:54:04 IST" name="Suite" finished-at="2024-11-07T15:54:13 IST" duration-ms="9140">
     <groups>
     </groups>
-    <test started-at="2024-11-07T10:52:39 IST" name="Sauce Chrome Test" finished-at="2024-11-07T10:52:46 IST" duration-ms="7183">
+    <test started-at="2024-11-07T15:54:04 IST" name="Test" finished-at="2024-11-07T15:54:13 IST" duration-ms="9140">
       <class name="com.sauce.functionalities.SauceTestAddToCart">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@1040be71]" started-at="2024-11-07T10:52:39 IST" name="setUp" finished-at="2024-11-07T10:52:42 IST" duration-ms="2828" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@28dcca0c]" started-at="2024-11-07T15:54:04 IST" name="setUp" finished-at="2024-11-07T15:54:09 IST" duration-ms="4695" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addCartFunctionality()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@1040be71]" started-at="2024-11-07T10:52:42 IST" name="addCartFunctionality" finished-at="2024-11-07T10:52:43 IST" depends-on-methods="com.sauce.functionalities.SauceTestLoginLogout.testLogin" duration-ms="705" status="PASS">
+        <test-method signature="addCartFunctionality()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@28dcca0c]" started-at="2024-11-07T15:54:09 IST" name="addCartFunctionality" finished-at="2024-11-07T15:54:10 IST" depends-on-methods="com.sauce.functionalities.SauceTestLoginLogout.testLogin" duration-ms="751" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test started: addCartFunctionality]]>
@@ -64,7 +64,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addCartFunctionality -->
-        <test-method signature="continueShopping()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@1040be71]" started-at="2024-11-07T10:52:43 IST" name="continueShopping" finished-at="2024-11-07T10:52:43 IST" depends-on-methods="com.sauce.functionalities.SauceTestAddToCart.addCartFunctionality" duration-ms="167" status="PASS">
+        <test-method signature="continueShopping()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@28dcca0c]" started-at="2024-11-07T15:54:10 IST" name="continueShopping" finished-at="2024-11-07T15:54:10 IST" depends-on-methods="com.sauce.functionalities.SauceTestAddToCart.addCartFunctionality" duration-ms="181" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test started: continueShopping]]>
@@ -74,13 +74,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- continueShopping -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@1040be71]" started-at="2024-11-07T10:52:46 IST" name="tearDown" finished-at="2024-11-07T10:52:46 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauce.functionalities.SauceTestAddToCart@28dcca0c]" started-at="2024-11-07T15:54:13 IST" name="tearDown" finished-at="2024-11-07T15:54:13 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.sauce.functionalities.SauceTestAddToCart -->
       <class name="com.sauce.functionalities.SauceTestCheckout">
-        <test-method signature="doCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T10:52:43 IST" name="doCheckout" finished-at="2024-11-07T10:52:44 IST" depends-on-methods="com.sauce.functionalities.SauceTestAddToCart.continueShopping" duration-ms="573" status="PASS">
+        <test-method signature="doCheckout(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T15:54:10 IST" name="doCheckout" finished-at="2024-11-07T15:54:11 IST" depends-on-methods="com.sauce.functionalities.SauceTestAddToCart.continueShopping" duration-ms="578" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- doCheckout -->
-        <test-method signature="finishOrCancelCheckout(java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T10:52:44 IST" name="finishOrCancelCheckout" finished-at="2024-11-07T10:52:44 IST" depends-on-methods="com.sauce.functionalities.SauceTestCheckout.doCheckout" duration-ms="161" status="PASS">
+        <test-method signature="finishOrCancelCheckout(java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T15:54:11 IST" name="finishOrCancelCheckout" finished-at="2024-11-07T15:54:11 IST" depends-on-methods="com.sauce.functionalities.SauceTestCheckout.doCheckout" duration-ms="168" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -124,7 +124,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- finishOrCancelCheckout -->
-        <test-method signature="testLogout()[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T10:52:44 IST" name="testLogout" finished-at="2024-11-07T10:52:46 IST" depends-on-methods="com.sauce.functionalities.SauceTestCheckout.finishOrCancelCheckout" duration-ms="2154" status="PASS">
+        <test-method signature="testLogout()[pri:0, instance:com.sauce.functionalities.SauceTestCheckout@45d84a20]" started-at="2024-11-07T15:54:11 IST" name="testLogout" finished-at="2024-11-07T15:54:13 IST" depends-on-methods="com.sauce.functionalities.SauceTestCheckout.finishOrCancelCheckout" duration-ms="2143" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Test started: testLogout]]>
@@ -136,7 +136,7 @@
         </test-method> <!-- testLogout -->
       </class> <!-- com.sauce.functionalities.SauceTestCheckout -->
       <class name="com.sauce.functionalities.SauceTestLoginLogout">
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestLoginLogout@28dcca0c]" started-at="2024-11-07T10:52:42 IST" name="testLogin" finished-at="2024-11-07T10:52:42 IST" duration-ms="300" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:com.sauce.functionalities.SauceTestLoginLogout@451001e5]" started-at="2024-11-07T15:54:09 IST" name="testLogin" finished-at="2024-11-07T15:54:09 IST" duration-ms="312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,6 +159,6 @@
           </reporter-output>
         </test-method> <!-- testLogin -->
       </class> <!-- com.sauce.functionalities.SauceTestLoginLogout -->
-    </test> <!-- Sauce Chrome Test -->
-  </suite> <!-- Sauce Test Suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
