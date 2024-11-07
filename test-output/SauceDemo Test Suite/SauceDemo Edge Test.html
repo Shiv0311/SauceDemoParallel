@@ -1,0 +1,332 @@
+<html>
+<head>
+<title>TestNG:  SauceDemo Edge Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SauceDemo Edge Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 06 14:53:34 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (149 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestAddToCart.DriverManager()'><b>DriverManager</b><br>Test class: com.sauce.functionalities.SauceTestAddToCart</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149225732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149225732'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1730885014</td>
+<td>com.sauce.functionalities.SauceTestAddToCart@7857fe2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestAddToCart.continueShopping()'><b>continueShopping</b><br>Test class: com.sauce.functionalities.SauceTestAddToCart<br/>
+<a href="#Output-1016871564" onClick='toggleBox("Output-1016871564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1016871564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1016871564">
+Test skipped: continueShopping with status: 3<br/>
+Test started: doCheckout<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method com.sauce.functionalities.SauceTestAddToCart.continueShopping() on instance com.sauce.functionalities.SauceTestAddToCart@7857fe2 depends on not successfully finished methods 
+[com.sauce.functionalities.SauceTestAddToCart.addCartFunctionality() on instance com.sauce.functionalities.SauceTestAddToCart@7857fe2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1016871564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016871564'><pre>java.lang.Throwable: Method com.sauce.functionalities.SauceTestAddToCart.continueShopping() on instance com.sauce.functionalities.SauceTestAddToCart@7857fe2 depends on not successfully finished methods 
+[com.sauce.functionalities.SauceTestAddToCart.addCartFunctionality() on instance com.sauce.functionalities.SauceTestAddToCart@7857fe2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestAddToCart@7857fe2</td></tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestCheckout.doCheckout()'><b>doCheckout</b><br>Test class: com.sauce.functionalities.SauceTestCheckout<br>Parameters: Shivkumar, Konnuri, 400708<br/>
+<a href="#Output-223373012" onClick='toggleBox("Output-223373012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223373012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223373012">
+Test skipped: doCheckout with status: 3<br/>
+Test started: finishOrCancelCheckout<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace223373012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace223373012'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestCheckout@6f15d60e</td></tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestLoginLogout.testLogout()'><b>testLogout</b><br>Test class: com.sauce.functionalities.SauceTestLoginLogout<br/>
+<a href="#Output-80195553" onClick='toggleBox("Output-80195553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-80195553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-80195553">
+Test skipped: testLogout with status: 3<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace80195553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace80195553'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestLoginLogout@20b2475a</td></tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestLoginLogout.testLogin()'><b>testLogin</b><br>Test class: com.sauce.functionalities.SauceTestLoginLogout<br>Parameters: standard_user, secret_sauce<br/>
+<a href="#Output-325878772" onClick='toggleBox("Output-325878772", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-325878772" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-325878772">
+Test skipped: testLogin with status: 3<br/>
+Test started: addCartFunctionality<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace325878772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace325878772'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestLoginLogout@20b2475a</td></tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestAddToCart.addCartFunctionality()'><b>addCartFunctionality</b><br>Test class: com.sauce.functionalities.SauceTestAddToCart<br/>
+<a href="#Output-2120504941" onClick='toggleBox("Output-2120504941", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2120504941" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2120504941">
+Test skipped: addCartFunctionality with status: 3<br/>
+Test started: continueShopping<br/>
+</div>
+</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2120504941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2120504941'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method DriverManager but has not been marked @Optional or defined
+in C:\Users\Shivkumar.K\Selenium-Workspace\SauceDemoParallel\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestAddToCart@7857fe2</td></tr>
+<tr>
+<td title='com.sauce.functionalities.SauceTestCheckout.finishOrCancelCheckout()'><b>finishOrCancelCheckout</b><br>Test class: com.sauce.functionalities.SauceTestCheckout<br/>
+<a href="#Output-1506981389" onClick='toggleBox("Output-1506981389", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1506981389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506981389">
+Test skipped: finishOrCancelCheckout with status: 3<br/>
+Test started: testLogout<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Throwable: Method com.sauce.functionalities.SauceTestCheckout.finishOrCancelCheckout() on instance com.sauce.functionalities.SauceTestCheckout@6f15d60e depends on not successfully finished methods 
+[com.sauce.functionalities.SauceTestCheckout.doCheckout() on instance com.sauce.functionalities.SauceTestCheckout@6f15d60e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506981389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506981389'><pre>java.lang.Throwable: Method com.sauce.functionalities.SauceTestCheckout.finishOrCancelCheckout() on instance com.sauce.functionalities.SauceTestCheckout@6f15d60e depends on not successfully finished methods 
+[com.sauce.functionalities.SauceTestCheckout.doCheckout() on instance com.sauce.functionalities.SauceTestCheckout@6f15d60e]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>com.sauce.functionalities.SauceTestCheckout@6f15d60e</td></tr>
+</table><p>
+</body>
+</html>

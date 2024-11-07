@@ -1,0 +1,1 @@
+{"uuid":"a85aa3bc-6e63-43fc-b2d2-5ce987d8ac3c","name":"Sauce Test Suite","children":["2e5bd353-ada1-4ecc-b202-9d6ccf683878"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1730951361797,"stop":1730951366401}],"afters":[],"start":1730951361776,"stop":1730951368458}
