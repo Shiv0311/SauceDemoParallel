@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="SauceDemoParallel Test Suite">
 	<parameter name="username" value="standard_user" />
 	<parameter name="password" value="secret_sauce" />
 	<parameter name="firstName" value="Shivkumar" />
@@ -10,8 +10,8 @@
 	<parameter name="browser" value="chrome" />
 	<listeners>
 			<listener class-name="com.sauce.listeners.SauceDemoListeners" />
-		</listeners>
-  <test name="Test">
+	</listeners>
+  <test name="SauceDemoParallel  Test">
     <classes>
       <class name="com.sauce.functionalities.SauceTestLoginLogout"/>
       <class name="com.sauce.functionalities.SauceTestAddToCart"/>
